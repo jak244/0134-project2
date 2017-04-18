@@ -1,0 +1,116 @@
+body {
+  background-color: blue;
+}
+
+p {
+
+  color: orange;
+  text-align: center;
+}
+
+h1 {
+
+  color: orange;
+  text-align: center;
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 5s;
+  position: relative;
+  animation-name: move;
+  animation-duration: 5s;
+}
+
+@keyframes move {
+  0% {left: 0px; right: 0px;}
+  25% {left: 200px; right: 0px;}
+  100% {left: 0px; right: 0px;}
+}
+
+@-webkit-keyframes move {
+  0% {left: 0px; right: 0px;}
+  25% {left: 200px; right: 0px;}
+  100% {left: 0px; right: 0px;}
+}
+
+nav {
+
+  border-style: double;
+  border-left:  none;
+  border-right: none;
+  border-color: red;
+  text-align: center;
+}
+
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+
+  display: inline-block;
+
+}
+
+li a {
+
+  padding: 0px 50px 0px 50px;
+  text-decoration: none;
+  color: yellow;
+}
+
+h2 {
+  color: orange;
+  text-align: center;
+}
+
+blockquote {
+  text-align: center;
+  color: orange;
+}
+
+.button {
+  text-align: center;
+}
+
+#active {
+
+
+  background-color: red;
+  height: 2px;
+}
+
+.foot {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.super {
+
+  text-align: center;
+}
+
+img {
+
+  width: 400px;
+  height: 400px;
+}
+
+#title {
+  text-decoration: none;
+  color: orange;
+}
+
+@media only screen and (max-width: 575px) {
+
+  li {
+    display: block;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }

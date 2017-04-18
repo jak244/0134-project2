@@ -1,0 +1,126 @@
+body {
+  background-color: blue;
+}
+
+p {
+  color: orange;
+  font-family: sans-serif;;
+
+}
+
+h1 {
+
+  color: orange;
+  text-align: center;
+  -webkit-animation-name: move;
+  -webkit-animation-duration: 5s;
+  position: relative;
+  animation-name: move;
+  animation-duration: 5s;
+}
+
+@keyframes move {
+  0% {left: 0px; right: 0px;}
+  25% {left: 200px; right: 0px;}
+  100% {left: 0px; right: 0px;}
+}
+
+@-webkit-keyframes move {
+  0% {left: 0px; right: 0px;}
+  25% {left: 200px; right: 0px;}
+  100% {left: 0px; right: 0px;}
+}
+
+nav {
+
+  border-style: double;
+  border-left:  none;
+  border-right: none;
+  border-color: red;
+  text-align: center;
+}
+
+ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+
+  display: inline-block;
+}
+
+li a {
+
+  padding: 0px 50px 0px 50px;
+  text-decoration: none;
+  color: yellow;
+}
+
+#active {
+
+  background-color: red;
+  height: 2px;
+}
+
+table {
+
+  width: 100%;
+}
+
+.message {
+
+  width: 100%;
+  text-align: center;
+  border-style: solid;
+  border: 2px;
+
+}
+
+.group {
+  text-align: center;
+
+}
+
+img {
+
+  width :300px;
+  height: 300px;
+  -webkit-transition: -webkit-transform 3s;
+}
+
+img:hover {
+  -webkit-transform: rotate(360deg);
+}
+
+.size {
+  font-size: 18px;
+}
+
+.foot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 575px) {
+  .size {
+    font-size: 24px;
+  }
+
+  td {
+    display: block;
+  }
+
+  .foot {
+    position: relative;
+  }
+
+  li {
+    display: block;
+  }
+}
